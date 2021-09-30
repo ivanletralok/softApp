@@ -72,7 +72,6 @@ delete(id: number){
 
 }
 
-
 openPopup(data:any){
   this.displayStyle = 'block';
   this.title = 'Actualizar Monitor';

@@ -1,4 +1,10 @@
+<div class="titulo">
+    <h1>Agregar Monitor</h1>
+
+</div>
+<br><br>
 <button (click)="openModal()" type="button" class="btn btn-primary">Crear Monitor</button>
+<br>
 <table class="table">
     <thead>
         <tr>
@@ -25,6 +31,7 @@
 
     </tbody>
 </table>
+<a [routerLink]="['/']" class="btn btn-secondary">Regresar</a>
 
 
 <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">

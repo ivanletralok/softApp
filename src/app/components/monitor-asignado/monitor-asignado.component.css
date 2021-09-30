@@ -1,3 +1,9 @@
 .icon {
     cursor: pointer;
 }
+
+.titulo {
+    text-align: center;
+    font-family: cursive;
+    margin-top: 25px;
+}

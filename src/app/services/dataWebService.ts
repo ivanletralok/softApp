@@ -10,7 +10,7 @@ export class DataWebService implements InMemoryDbService {
         programa_academico: 'Ing Sistemas',
         semestre:'quinto semestre' ,
         cedula:1515158151,
-        contacto: 'Este es un men'
+        contacto: '3215884848'
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ export class DataWebService implements InMemoryDbService {
         programa_academico: 'Ing Sistemas',
         semestre:'octavo semestre' ,
         cedula:6596564,
-        contacto: 'Men Dos'
+        contacto: '3001545484'
     },
     {
         id: 3,
@@ -28,7 +28,7 @@ export class DataWebService implements InMemoryDbService {
         programa_academico: 'Ing Sistemas',
         semestre:'septimo semestre',
         cedula: 62665258,
-        contacto: 'Men tres'
+        contacto: '3017506265'
     },
     
     ];

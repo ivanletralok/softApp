@@ -1,0 +1,12 @@
+.titulo {
+    text-align: center;
+    font-family: cursive;
+    margin-top: 25px;
+}
+
+.contenBton {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}

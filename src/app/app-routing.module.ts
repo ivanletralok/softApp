@@ -6,11 +6,7 @@ import { MonitoresComponent } from './components/monitores/monitores.component';
 
 const routes: Routes = [
 
-  {
-    path:"**",
-    pathMatch:'full',
-    redirectTo:'/'
-  },
+  
   {
     path:'',
     component:HomeComponent

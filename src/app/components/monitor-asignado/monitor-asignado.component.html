@@ -1,4 +1,10 @@
+<div class="titulo">
+    <h1>Asignar Monitorias</h1>
+
+</div>
+<br><br>
 <button (click)="openModal()" type="button" class="btn btn-primary">Crear Monitoria</button>
+<br>
 
 <table class="table">
     <thead>
@@ -24,6 +30,8 @@
 
     </tbody>
 </table>
+<a [routerLink]="['/']" class="btn btn-secondary">Regresar</a>
+
 
 <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':modal}">
     <div class="modal-dialog" role="document">
