@@ -33,33 +33,33 @@ export class DataWebService implements InMemoryDbService {
     
     ];
 
-    return {monitores}
 
-/* 
+
     let monitorias = [
         {
           id: 1,
           materia: 'POP',
-          monitorAsignado: 1,
-          fecha: '20/05/2020',
+          monitorAsignado: "Alex",
+          fecha: '2021-09-08',
           salon:'404',
       },
       {
         id: 2,
         materia: 'Algoritmo',
-        monitorAsignado: 2,
-        fecha: '20/05/2020',
+        monitorAsignado: "Alex",
+        fecha: '2021-09-08',
         salon:'504',
       },
       {
         id: 3,
         materia: 'Web',
-        monitorAsignado: 2,
-        fecha: '20/05/2020',
+        monitorAsignado: 'Andres',
+        fecha: '2021-09-08',
         salon:'304',
       },
        
-      ]; */
+      ]; 
+      return {monitores, monitorias}
 
     }
 }

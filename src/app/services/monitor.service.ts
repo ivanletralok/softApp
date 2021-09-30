@@ -20,13 +20,16 @@ export class MonitorService {
   }
 
   deleteMonitor(id:number){
-    console.log(id)
 
     return this.httpCleinte.delete(this.url+ '/' +id);
   }
 
   updateMonitor(monitor:any){
     return this.httpCleinte.put(this.url, monitor);
+  }
+
+  createMonitor(dato:any){
+    return this.httpCleinte.post(this.url, dato)
   }
 
 
