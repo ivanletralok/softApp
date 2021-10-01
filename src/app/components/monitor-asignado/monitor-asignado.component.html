@@ -23,8 +23,8 @@
             <td>{{item['fecha']}}</td>
             <td>{{item['salon']}}</td>
             <td>
-                <img class="icon" src="../../../assets/trash-alt-solid-24.png" alt="trash" (click)="deleteMonitoria(item['id'])">
-                <img class="icon" src="../../../assets/edit-alt-solid-24.png" alt="" (click)="openPopup(item)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class='bx bxs-trash-alt icon' (click)="deleteMonitoria(item['id'])"></i>
+                <i class='bx bxs-edit-alt icon' (click)="openPopup(item)" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
             </td>
         </tr>
 
