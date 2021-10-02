@@ -4,6 +4,7 @@ import { MonitorService } from 'src/app/services/monitor.service';
 import Swal from 'sweetalert2'
 
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-monitores',
@@ -16,6 +17,9 @@ export class MonitoresComponent implements OnInit {
   isVisible2 = true;
   
   displayStyle = "none";
+
+  modalToClose: any;
+  boopstrap: any;
 
 
   dataInf = [];
@@ -39,6 +43,12 @@ export class MonitoresComponent implements OnInit {
     this.getMonitore();
 }
 
+ngAfterViewInit() {
+  this.boopstrap = (<any>window).bootstrap;
+  console.log("Inicio")
+  const objModal = document.getElementById("modalToCLose");
+  this.modalToClose = new this.boopstrap.Modal(objModal);
+}
 
 getMonitore(){
   this.monitores.getMonitores().subscribe(data => {
@@ -73,8 +83,8 @@ delete(id: number){
 }
 
 openPopup(data:any){
-  this.displayStyle = 'block';
   this.title = 'Actualizar Monitor';
+  this.modalToClose.show();
 
   this.monitor = data;
   this.isVisible = true;
@@ -91,14 +101,16 @@ UpdateMonitor(){
       '',
       'success'
     )
-  this.displayStyle = 'none'
-
+    this.modalToClose.hide();
   }) 
 }
 
 Cancelar(){
   this.getMonitore()
-  this.displayStyle = 'none'
+  console.log("jose no vale monda");
+  console.log(this.modalService.hasOpenModals())
+  if (this.modalToClose) this.modalToClose.hide();
+  //this.displayStyle = 'none'
 
 }
 
